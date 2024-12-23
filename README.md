@@ -1,5 +1,7 @@
 # USAugment
 
+![Examples of each augmentation.](readme_banner.png)
+
 USAugment provides ultrasound-specific image transforms for training deep neural networks. It accompanies our article [Revisiting Data Augmentation for Ultrasound Images]().
 
 Checkout the [Wiki](https://github.com/adamtupper/usaugment/wiki) to find the documentation, usage examples, and contributing guidelines.
