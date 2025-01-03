@@ -54,6 +54,7 @@ To ensure that your code meets the style guidelines etc., make sure you install 
 ```bash
 pip install '.[dev]'
 nbstripout --install
+pre-commit install
 ```
 
 ## How to cite USAugment
