@@ -21,7 +21,7 @@ Here add a quick code demo showing how to compose a multiple augmentations toget
 
 ```python
 >>> import albumentations as A
->>> from usaugment import BilateralFilter, DepthAttenuation, GaussianShadow, HazeArtifact
+>>> from usaugment.albumentations import BilateralFilter, DepthAttenuation, GaussianShadow, HazeArtifact
 >>> transform = A.Compose(
 ...     [
 ...         BilateralFilter(p=0.5),
