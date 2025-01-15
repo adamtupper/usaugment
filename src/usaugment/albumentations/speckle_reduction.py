@@ -1,7 +1,8 @@
-"""A Random bilateral filter transform to reduce speckle noise as proposed in "Bilateral
-Filtering for Gray and Color Images" (Tomasi & Manduchi, 1998).
+"""A Random bilateral filter transform to reduce speckle noise as proposed in
+"Highlighting nerves and blood vessels for ultrasound-guided axillary nerve block
+procedures using neural networks" (Smistad et al., 2018).
 
-Uses the implementation from scikit-image.
+Uses the bilateral filter implementation from scikit-image.
 """
 
 from typing import Any, Dict, Tuple
@@ -11,10 +12,12 @@ from albumentations.core.transforms_interface import ImageOnlyTransform
 from skimage.restoration import denoise_bilateral
 
 
-class BilateralFilter(ImageOnlyTransform):
+class SpeckleReduction(ImageOnlyTransform):
     """A Random bilateral filter transform to reduce speckle noise as proposed in
-    "Bilateral Filtering for Gray and Color Images" (Tomasi & Manduchi, 1998).
-    Uses the implementation from scikit-image.
+    "Highlighting nerves and blood vessels for ultrasound-guided axillary nerve block
+    procedures using neural networks" (Smistad et al., 2018).
+
+    Uses the bilateral filter implementation from scikit-image.
     """
 
     def __init__(
@@ -24,7 +27,7 @@ class BilateralFilter(ImageOnlyTransform):
         window_size: int = 5,
         p: float = 0.5,
     ) -> None:
-        super(BilateralFilter, self).__init__(p=p)
+        super(SpeckleReduction, self).__init__(p=p)
         self.sigma_spatial = sigma_spatial
         self.sigma_color = sigma_color
         self.window_size = window_size

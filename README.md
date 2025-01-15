@@ -21,13 +21,13 @@ Here add a quick code demo showing how to compose a multiple augmentations toget
 
 ```python
 >>> import albumentations as A
->>> from usaugment.albumentations import BilateralFilter, DepthAttenuation, GaussianShadow, HazeArtifact
+>>> from usaugment.albumentations import DepthAttenuation, GaussianShadow, HazeArtifact, SpeckleReduction
 >>> transform = A.Compose(
 ...     [
-...         BilateralFilter(p=0.5),
 ...         DepthAttenuation(p=0.5),
 ...         GaussianShadow(p=0.5),
 ...         HazeArtifact(p=0.5),
+...         SpeckleReduction(p=0.5),
 ...     ],
 ...     additional_targets={"scan_mask": "mask"}
 ...)
