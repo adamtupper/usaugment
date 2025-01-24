@@ -7,6 +7,7 @@ name = "usaugment"
 authors = [
   { name="Adam Tupper", email="adam.tupper.1@ulaval.ca" },
 ]
+dynamic = ["version"]
 description = "Ultrasound-specific image transforms for training deep neural networks."
 readme = "README.md"
 requires-python = ">=3.8"
