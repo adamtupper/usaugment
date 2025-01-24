@@ -4,7 +4,6 @@ build-backend = "hatchling.build"
 
 [project]
 name = "usaugment"
-version = "1.0.0"
 authors = [
   { name="Adam Tupper", email="adam.tupper.1@ulaval.ca" },
 ]
@@ -40,6 +39,9 @@ examples = [
 Homepage = "https://github.com/adamtupper/usaugment"
 Documentation = "https://github.com/adamtupper/usaugment/wiki"
 Issues = "https://github.com/adamtupper/usaugment/issues"
+
+[tool.hatch.version]
+path = "src/usaugment/__about__.py"
 
 [tool.ruff.lint]
 select = [
