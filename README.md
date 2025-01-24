@@ -1,5 +1,8 @@
 # USAugment
 
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/adamtupper/usaugment/HEAD?urlpath=%2Fdoc%2Ftree%2Fexamples%2Fostvik_augmentations.ipynb)
+[![arXiv](https://img.shields.io/badge/arXiv-2501.13193-b31b1b.svg)](http://arxiv.org/abs/2501.13193)
+
 ![Examples of each augmentation.](figures/readme_banner.png)
 
 USAugment provides ultrasound-specific image transforms for training deep neural networks. It accompanies our article [Revisiting Data Augmentation for Ultrasound Images](http://arxiv.org/abs/2501.13193).
