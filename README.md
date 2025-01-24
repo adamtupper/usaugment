@@ -2,13 +2,13 @@
 
 ![Examples of each augmentation.](figures/readme_banner.png)
 
-USAugment provides ultrasound-specific image transforms for training deep neural networks. It accompanies our article [Revisiting Data Augmentation for Ultrasound Images]().
+USAugment provides ultrasound-specific image transforms for training deep neural networks. It accompanies our article [Revisiting Data Augmentation for Ultrasound Images](http://arxiv.org/abs/2501.13193).
 
 Checkout the [Wiki](https://github.com/adamtupper/usaugment/wiki) to find the documentation, usage examples, and contributing guidelines.
 
 ## How to install USAugment
 
-This package can be installed from [PyPI]() by running:
+This package can be installed from [PyPI](https://pypi.org/project/usaugment/) by running:
 
 ```bash
 pip install usaugment
@@ -47,7 +47,7 @@ pip install '.[examples]'
 
 ## Contributing
 
-I'd love for this package to grow and flourish into a resource that anyone with an interest in training deep neural networks for ultrasound analysis tasks can pick up and use quickly and easily. Any help addressing bugs, contributing new augmentations, or any other improvements are welcome and appreiciated! I only ask that you respect the community guidelines laid out in the `CODE_OF_CONDUCT.md`. For more information on how to contribute, checkout out the [Documentation](https://github.com/adamtupper/usaugment/wiki).
+I'd love for this package to grow and flourish into a resource that anyone with an interest in training deep neural networks for ultrasound analysis tasks can pick up and use quickly and easily. Any help addressing bugs, contributing new augmentations, or any other improvements are welcome and appreciated! I only ask that you respect the community guidelines laid out in the `CODE_OF_CONDUCT.md`. For more information on how to contribute, checkout out the [Documentation](https://github.com/adamtupper/usaugment/wiki).
 
 To ensure that your code meets the style guidelines etc., make sure you install the optional development dependencies:
 
@@ -59,7 +59,16 @@ pre-commit install
 
 ## How to cite USAugment
 
-If you use the augmentations in USAugment in your research, please cite our article [Revisiting Data Augmentation for Ultrasound Images](). This helps more people find and use the package and encourages us to continue maintaining and improving it!
+If you use the augmentations in USAugment in your research, please cite our article [Revisiting Data Augmentation for Ultrasound Images](http://arxiv.org/abs/2501.13193). This helps more people find and use the package and encourages us to continue maintaining and improving it!
 
 ```
+@misc{tupper2025,
+      title={Revisiting Data Augmentation for Ultrasound Images}, 
+      author={Adam Tupper and Christian Gagné},
+      year={2025},
+      eprint={2501.13193},
+      archivePrefix={arXiv},
+      primaryClass={eess.IV},
+      url={https://arxiv.org/abs/2501.13193}, 
+}
 ```
