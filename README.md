@@ -17,10 +17,9 @@ This package can be installed from [PyPI](https://pypi.org/project/usaugment/) b
 pip install usaugment
 ```
 
-
 ## Get started using USAugment
 
-Here add a quick code demo showing how to compose a multiple augmentations together using Albumentations after the package is installed.
+Here's a quick code demo showing how to compose a multiple augmentations together using Albumentations. Note that the augmentations also require a binary scan mask identifying the region of the scan in the image (1 = pixels in the scan, 0 = otherwise).
 
 ```python
 >>> import albumentations as A
@@ -34,19 +33,20 @@ Here add a quick code demo showing how to compose a multiple augmentations toget
 ...     ],
 ...     additional_targets={"scan_mask": "mask"}
 ...)
->>> transformed = transform(image=image)
+>>> image = ... # Load image
+>>> scan_mask = ... # Load scan mask
+>>> transformed = transform(image=image, scan_mask=scan_mask)
 ```
 
 Checkout the [Documentation](https://github.com/adamtupper/usaugment/wiki) for more detailed examples and information about scan masks.
 
 ## Running the examples
 
-There's a notebook in the notebooks directory that provides examples that visualize the effects of each augmentation. You can run these examples using Binder (see the tag at the top of page) or locally by installing the optional `examples` dependencies (Matplotlib and Jupyter Notebook):
+There's a notebook in the examples directory showing how to use and visualize the effect of each augmentation. You can run these examples using Binder (see the tag at the top of page) or locally by installing the optional `examples` dependencies (Matplotlib and Jupyter Notebook):
 
 ```bash
 pip install '.[examples]'
 ```
-
 
 ## Contributing
 
