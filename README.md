@@ -2,10 +2,11 @@
 
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/adamtupper/usaugment/HEAD?urlpath=%2Fdoc%2Ftree%2Fexamples%2Fostvik_augmentations.ipynb)
 [![arXiv](https://img.shields.io/badge/arXiv-2501.13193-b31b1b.svg)](http://arxiv.org/abs/2501.13193)
+[![OpenReview](https://img.shields.io/badge/OpenReview-Reviews-blue.svg)](https://openreview.net/forum?id=iGcxlTLIL5)
 
 ![Examples of each augmentation.](figures/readme_banner.png)
 
-USAugment provides ultrasound-specific image transforms for training deep neural networks. It accompanies our article [Revisiting Data Augmentation for Ultrasound Images](http://arxiv.org/abs/2501.13193).
+USAugment provides ultrasound-specific image transforms for training deep neural networks. It accompanies our article [Revisiting Data Augmentation for Ultrasound Images](https://openreview.net/forum?id=iGcxlTLIL5).
 
 Checkout the [Wiki](https://github.com/adamtupper/usaugment/wiki) to find the documentation, usage examples, and contributing guidelines.
 
@@ -62,16 +63,17 @@ pre-commit install
 
 ## How to cite USAugment
 
-If you use the augmentations in USAugment in your research, please cite our article [Revisiting Data Augmentation for Ultrasound Images](http://arxiv.org/abs/2501.13193). This helps more people find and use the package and encourages us to continue maintaining and improving it!
+If you use the augmentations in USAugment in your research, please cite our article [Revisiting Data Augmentation for Ultrasound Images](https://openreview.net/forum?id=iGcxlTLIL5). This helps more people find and use the package and encourages us to continue maintaining and improving it!
 
 ```
-@misc{tupper2025,
-      title={Revisiting Data Augmentation for Ultrasound Images}, 
-      author={Adam Tupper and Christian Gagné},
-      year={2025},
-      eprint={2501.13193},
-      archivePrefix={arXiv},
-      primaryClass={eess.IV},
-      url={https://arxiv.org/abs/2501.13193}, 
+@article{
+tupper2025,
+title={Revisiting Data Augmentation for Ultrasound Images},
+author={Adam Tupper and Christian Gagn{\'e}},
+journal={Transactions on Machine Learning Research},
+issn={2835-8856},
+year={2025},
+url={https://openreview.net/forum?id=iGcxlTLIL5},
+note={}
 }
 ```
